@@ -70,6 +70,8 @@ sudo nano /etc/keepalived/keepalived.conf
 
 ![screen4](https://github.com/KorolkovDenis/10.1-Keepalived-vrrp/blob/main/screenshots/screen4.png)
 
+![screen1](https://github.com/KorolkovDenis/8.2-jenkins-korolkov/blob/main/Screenshots/work1/screen1.png)
+
 
 ```
 
