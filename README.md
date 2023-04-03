@@ -23,7 +23,6 @@
 
 Разверните топологию из лекции и выполните установку и настройку сервиса Keepalived. 
 
-```
 vrrp_instance test {
 state "name_mode"
 interface "name_interface"
@@ -124,6 +123,7 @@ sudo nano /etc/keepalived/keepalived.conf
 Slave –нода приняла на себя обязанности master – ноды:
 
 ![screen6](https://github.com/KorolkovDenis/10.1-Keepalived-vrrp/blob/main/screenshots/task2/screen6.jpg)
+
 
  ## Моя работа в Google:
 
