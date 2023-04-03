@@ -56,19 +56,19 @@ sudo nano /etc/keepalived/keepalived.conf
 
 на master-ноде:
 
-![screen1](https://github.com/KorolkovDenis/)
+![screen1](https://github.com/KorolkovDenis/10.1-Keepalived-vrrp/blob/main/screenshots/screen1.png)
 
 на slave-ноде:
 
-![screen2](https://github.com/KorolkovDenis/)
+![screen2](https://github.com/KorolkovDenis/10.1-Keepalived-vrrp/blob/main/screenshots/screen2.png)
 
 На этом скрине видно, что первая нода перешла в состояние master, а вторая нода в состояние backup, в зависимости от обозначенных в конфигурационном файле приоритетов и соответственно видно, что наш виртуальный адрес 192.168.43.100/32 сейчас активен на master-ноде:
 
-![screen3](https://github.com/KorolkovDenis/)
+![screen3](https://github.com/KorolkovDenis/10.1-Keepalived-vrrp/blob/main/screenshots/screen3.png)
 
 Останавливаю службу на master- ноде – виртуальный адрес на мастере пропадает и запускается на slave – ноде:
 
-![screen4](https://github.com/KorolkovDenis/)
+![screen4](https://github.com/KorolkovDenis/10.1-Keepalived-vrrp/blob/main/screenshots/screen4.png)
 
 
 ```
