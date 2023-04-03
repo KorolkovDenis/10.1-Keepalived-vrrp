@@ -72,8 +72,6 @@ sudo nano /etc/keepalived/keepalived.conf
 ![screen4](https://github.com/KorolkovDenis/10.1-Keepalived-vrrp/blob/main/screenshots/task1/screen4.png)
 
 
-```
-
 *В качестве решения предоставьте:*   
 *- рабочую конфигурацию обеих нод, оформленную как блок кода в вашем md-файле;*   
 *- скриншоты статуса сервисов, на которых видно, что одна нода перешла в MASTER, а вторая в BACKUP state.*   
