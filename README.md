@@ -60,6 +60,8 @@ sudo nano /etc/keepalived/keepalived.conf
 
 ![screen1](https://github.com/KorolkovDenis/10.1-Keepalived-vrrp/blob/main/screenshots/work1/screen1.png)
 
+![screen1](https://github.com/KorolkovDenis/10.1-Keepalived-vrrp/blob/main/screenshots/work1/screen1.jpg)
+
 на slave-ноде:
 
 ![screen2](https://github.com/KorolkovDenis/10.1-Keepalived-vrrp/blob/main/screenshots/work1/screen2.png)
