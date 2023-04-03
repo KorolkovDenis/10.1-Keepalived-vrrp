@@ -100,10 +100,31 @@ sudo nano /etc/keepalived/keepalived.conf
 
 Последовательность выполнения:
 
+Добавляю третий хост для наблюдения за нодами. Запускаем все три хоста.
+Смотрю на каком хосте сейчас запущен виртульный IP (192.168.43.100)– сейчас он MASTER нода. Скрин ниже:
+
+
 ![screen1](https://github.com/KorolkovDenis/)
+![screen2](https://github.com/KorolkovDenis/)
 
+На третьем хосте запустил ping на 192.168.43.100, а также wireshark.
+Останавливаю master ноду и смотрим результат с помощью wireshark:
 
+![screen3](https://github.com/KorolkovDenis/)
  
- ## Более полная работа, всех моих шагов по ходу выполнения в Google:
+Видим, что мы был не найден хост с IP 192.168.43.100 и MAC-адресом 08:00:27:54:34:ef
+Но уже при следующем ответе у нас хост с IP 192.168.43.100 найден, однако сменился MAC-адрес на 08:00:27:1f:58:a4
 
-[Моя работа по Keepalived](https://docs.google.com/)
+![screen4](https://github.com/KorolkovDenis/)
+
+Соответственно на master – ноде виртуальный ip 192.168.43.100 пропал, а на slave – ноде отобразился, скрин ниже:
+
+![screen5](https://github.com/KorolkovDenis/)
+
+Slave –нода приняла на себя обязанности master – ноды:
+
+![screen6](https://github.com/KorolkovDenis/)
+
+ ## Моя работа в Google:
+
+[Моя работа по Keepalived](https://docs.google.com/document/d/1mdSrj8U90xEIRA-tz0Ul8f4WHslHMDr_/edit?usp=share_link&ouid=104113173630640462528&rtpof=true&sd=true)
