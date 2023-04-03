@@ -58,7 +58,7 @@ sudo nano /etc/keepalived/keepalived.conf
 
 на master-ноде:
 
-![screen1](https://github.com/KorolkovDenis/10.1-Keepalived-vrrp/blob/main/screen1.jpg)
+[1] url https://github.com/KorolkovDenis/10.1-Keepalived-vrrp/blob/main/screen1.jpg
 
 на slave-ноде:
 
