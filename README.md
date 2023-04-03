@@ -104,26 +104,26 @@ sudo nano /etc/keepalived/keepalived.conf
 Смотрю на каком хосте сейчас запущен виртульный IP (192.168.43.100)– сейчас он MASTER нода. Скрин ниже:
 
 
-![screen1](https://github.com/KorolkovDenis/)
-![screen2](https://github.com/KorolkovDenis/)
+![screen1](https://github.com/KorolkovDenis/10.1-Keepalived-vrrp/blob/main/screenshots/task2/screen1.jpg)
+![screen2](https://github.com/KorolkovDenis/10.1-Keepalived-vrrp/blob/main/screenshots/task2/screen2.jpg)
 
 На третьем хосте запустил ping на 192.168.43.100, а также wireshark.
 Останавливаю master ноду и смотрим результат с помощью wireshark:
 
-![screen3](https://github.com/KorolkovDenis/)
+![screen3](https://github.com/KorolkovDenis/10.1-Keepalived-vrrp/blob/main/screenshots/task2/screen3.jpg)
  
 Видим, что мы был не найден хост с IP 192.168.43.100 и MAC-адресом 08:00:27:54:34:ef
 Но уже при следующем ответе у нас хост с IP 192.168.43.100 найден, однако сменился MAC-адрес на 08:00:27:1f:58:a4
 
-![screen4](https://github.com/KorolkovDenis/)
+![screen4](https://github.com/KorolkovDenis/10.1-Keepalived-vrrp/blob/main/screenshots/task2/screen4.jpg)
 
 Соответственно на master – ноде виртуальный ip 192.168.43.100 пропал, а на slave – ноде отобразился, скрин ниже:
 
-![screen5](https://github.com/KorolkovDenis/)
+![screen5](https://github.com/KorolkovDenis/10.1-Keepalived-vrrp/blob/main/screenshots/task2/screen5.jpg)
 
 Slave –нода приняла на себя обязанности master – ноды:
 
-![screen6](https://github.com/KorolkovDenis/)
+![screen6](https://github.com/KorolkovDenis/10.1-Keepalived-vrrp/blob/main/screenshots/task2/screen6.jpg)
 
  ## Моя работа в Google:
 
