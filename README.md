@@ -46,7 +46,29 @@ virtual_ipaddress {
 
 Последовательность выполнения:
 
+Создам две ноды: keepalived и keepalived2. На каждой ноде устанавливаю утилиту keepalived:
+
+sudo apt install keepalived
+
+Создадим и настроим файл конфигурации:
+
+sudo nano /etc/keepalived/keepalived.conf
+
+на master-ноде:
+
 ![screen1](https://github.com/KorolkovDenis/)
+
+на slave-ноде:
+
+![screen2](https://github.com/KorolkovDenis/)
+
+На этом скрине видно, что первая нода перешла в состояние master, а вторая нода в состояние backup, в зависимости от обозначенных в конфигурационном файле приоритетов и соответственно видно, что наш виртуальный адрес 192.168.43.100/32 сейчас активен на master-ноде:
+
+![screen3](https://github.com/KorolkovDenis/)
+
+Останавливаю службу на master- ноде – виртуальный адрес на мастере пропадает и запускается на slave – ноде:
+
+![screen4](https://github.com/KorolkovDenis/)
 
 
 ```
