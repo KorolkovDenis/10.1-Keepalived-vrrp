@@ -23,6 +23,8 @@
 
 Разверните топологию из лекции и выполните установку и настройку сервиса Keepalived. 
 
+```
+
 vrrp_instance test {
 state "name_mode"
 interface "name_interface"
@@ -40,6 +42,8 @@ virtual_ipaddress {
 "ip address host" dev "interface" label "interface":vip
 }
 }
+
+```
 
 ---
 
